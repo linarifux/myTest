@@ -16,9 +16,7 @@
 .header{
     margin: 0 auto;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
 }
 
 .header p{
@@ -26,10 +24,34 @@
     font-size: 20px;
     cursor: pointer;
     letter-spacing: 15px;
+    text-align: center;
 }
 .header span{
     color: teal;
 }
 .header .fa-bars{
     color: white;
+    display: none;
 }
+
+@media only screen and (max-width: 620px) {
+    .header{
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header p{
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        letter-spacing: 15px;
+        text-align: center;
+    }
+
+    .header .fa-bars{
+        display: block;
+    }
+  }
